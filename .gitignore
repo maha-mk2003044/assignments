@@ -185,3 +185,20 @@ cython_debug/
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# ========================================
+# CMPS360 Assignment 1 - DuckLake
+# ========================================
+
+# Generated DuckLake database, catalog, and Parquet storage
+lakehouse/
+
+
+# Additional generated database files
+*.duckdb.wal
+
+# Large original dataset
+/data/raw/BACI_HS17/
+
+# Generated DuckLake database
+/lakehouse/
