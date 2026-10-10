@@ -1,8 +1,8 @@
 # Qatar Import Trade Data Lakehouse (2017–2024)
 
-## 1. Project Overview
+## 1. Homework Overview
 
-This project implements a Bronze–Silver–Gold data lakehouse using DuckDB and DuckLake to analyze Qatar's international merchandise imports from 2017 to 2024.
+This homework implements a Bronze–Silver–Gold data lakehouse using DuckDB and DuckLake to analyze Qatar's international merchandise imports from 2017 to 2024.
 
 The project uses the CEPII BACI HS17 dataset, which contains international trade records classified by exporter country, importer country, product, and year.
 
