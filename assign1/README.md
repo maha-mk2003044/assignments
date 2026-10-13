@@ -4,7 +4,7 @@
 
 This homework implements a Bronze–Silver–Gold data lakehouse using DuckDB and DuckLake to analyze Qatar's international merchandise imports from 2017 to 2024.
 
-The project uses the CEPII BACI HS17 dataset, which contains international trade records classified by exporter country, importer country, product, and year.
+The homework uses the CEPII BACI HS17 dataset, which contains international trade records classified by exporter country, importer country, product, and year.
 
 The analysis focuses on Qatar (country code 634) and investigates import trends, major trading partners, leading imported products, and changes in supplier market shares.
 
@@ -150,7 +150,7 @@ The executed Jupyter notebook is located at:
 
 It includes layer summaries, SQL query results, charts, interpretations, and the star-schema diagram.
 
-## 7. Project Structure
+## 7. Homework Structure
 
 ```text
 assign1/
@@ -186,10 +186,22 @@ The dataset files and generated lakehouse storage are excluded from version cont
 
 To reproduce the results, download the specified BACI HS17 files, install the Python dependencies, execute the setup and pipeline scripts in order, and run the analysis script or Jupyter notebook.
 
-The pipeline uses project-relative paths so it can be executed from a different computer after the required data files are placed in the expected directory.
+The pipeline uses relative paths based on the homework directory so it can be executed from a different computer after the required data files are placed in the expected directory.
 
 ## 9. Dataset Attribution
 
 CEPII BACI International Trade Database, HS17 classification, 2017–2024.
 
 Source: https://www.cepii.fr/CEPII/en/bdd_modele/bdd_modele_item.asp?id=37
+
+## 10. Known Limitations
+
+The analysis focuses on Qatar's merchandise imports from 2017 to 2024 using the CEPII BACI HS17 dataset. Trade values are reported in current US dollars and are not adjusted for inflation, so changes in import value may reflect both price changes and changes in trade activity.
+
+Some trade records have missing quantities. These records are retained when their trade values are valid, which means quantity-based analysis may be incomplete.
+
+The dataset is based on annual trade records rather than real-time transactions. Additionally, a missing supplier-year observation should not automatically be interpreted as zero trade. For example, no UAE supplier-year observation was found for 2017 in the Gold dataset.
+
+## 11. AI Assistance Acknowledgment
+
+ChatGPT was used as a supporting tool during the development of this homework, including assistance with Python and SQL code, debugging, documentation, and explanations of the Bronze–Silver–Gold architecture. The homework was executed, tested, and reviewed by the student, who is responsible for the final implementation, results, and submitted work.
